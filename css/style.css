@@ -1,0 +1,245 @@
+/*IMPORT FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*GENERAL SETTINGS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(226, 226, 226);
+}
+
+main{
+    padding: 0px 1rem;
+}
+
+button{
+    text-decoration: none;
+    color: #fff;
+    border: none;
+}
+/*END GENERAL SETTINGS*/
+
+/*JS CLASSES ADD*/
+.btn-colorChange{
+    background-color: rgb(0, 149, 199) !important;
+}
+
+.body-colorChange{
+    background-color: rgb(168, 233, 255);
+}
+
+.star-colorChange{
+    color: rgb(255, 218, 0) !important;
+}
+/*END JS CLASSES ADD*/
+
+/*HEADER SETTINGS*/
+.header{
+    height: 3.4rem;
+    background-color: #404447;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+header h2{
+    letter-spacing: .1rem;
+}
+
+header i{
+    font-size: 2.4rem;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    cursor: pointer;
+}
+/*END HEADER SETTINGS*/
+
+/*MAIN SETTINGS*/
+.profile-container{
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0px 0px;
+}
+
+.profile-img{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-image: url("../img/profile-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-online{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    color: #fff;
+    font-size: .6rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 7rem;
+    left: 14.5rem;
+    -webkit-box-shadow: -3px 3px 6px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: -3px 3px 6px 0px rgba(50, 50, 50, 0.4);
+    box-shadow: -3px 3px 6px 0px rgba(50, 50, 50, 0.4);
+}
+
+.profile-content{
+    margin-top: 1rem;
+}
+
+.profile-content-title{
+    font-size: 1.3rem;
+    color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: space-between;
+}
+
+.back{
+    font-size: 22px;
+    color: rgb(240, 240, 240);
+    text-shadow: .1px .9px 0.5px #000;
+    cursor: pointer;
+}
+
+
+.profile-content-location{
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(255, 0, 128);
+}
+
+.profile-content-information{
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    margin: 10px 0px 3rem 0px;
+}
+    /*BUTTON SETTINGS*/
+    .btn-friends{
+        width: 100%;
+        cursor: pointer;
+        padding: 18px;
+        text-transform: uppercase;
+        background-color: #404447;
+    }
+    /*END BUTTON SETTINGS*/
+    /*CHAT SETTINGS*/
+    .chat-container{
+        width: 100%;
+        height: 78vh;
+        overflow: hidden;
+        overflow: scroll;
+    }
+
+    .chat-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: .8rem 0px 0px 0px;
+    }
+
+
+    .message{
+        width: 100%;
+        border: none;
+        border-radius: 5%;
+        padding: .9rem 0px .9rem 1.2rem;
+        margin: 10px 0px;
+    }
+
+    .message:focus{
+        border: 1px solid rgb(160, 231, 255);
+    }
+    /*END CHAT SETTINGS*/
+    /*USER SETTINGS*/
+    .user-profile{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1.5rem 0px;
+        text-align: left;
+    }
+
+    .user-profile-img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../img/profile-img2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+    }
+
+    .user-profile-img2{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-image: url("../img/profile-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+        cursor: pointer;
+    }
+
+    .user-message{
+        width: 80%;
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: .9rem;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    .user-message2{
+        width: 80%;
+        background-color: rgb(0, 149, 199);
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: .9rem;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+    /*USER SETTINGS*/
+/*END MAIN SETTINGS*/
+
+/*RESPONSIVE MOBILE DEVICES*/
+@media (min-device-width: 360px) 
+and (max-device-width: 740px){
+    .profile-online{
+        left: 16.3rem;
+    }
+}
+
+@media (min-device-width: 414px) 
+and (max-device-width: 812px){
+    .profile-online{
+        left: 17.4rem;
+    }
+}
+/*END RESPONSIVE MOBILE DEVICES*/
